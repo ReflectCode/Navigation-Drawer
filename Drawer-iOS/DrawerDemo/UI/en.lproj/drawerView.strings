@@ -1,0 +1,76 @@
+
+
+/* Class = "UINavigationItem" title="DrawerDemo" ObjectID = "DrawerViewController-Nav-ID" */
+"DrawerViewController-Nav-ID.title"  = "DrawerDemo";
+
+/* Class = "UILabel" text="Drawer Demo" ObjectID = "textView" */
+"textView.text" = "Drawer Demo";
+
+/* Class = "UILabel" text="Event Log" ObjectID = "tvEventLog" */
+"tvEventLog.text" = "Event Log";
+
+/* Class = "UILabel" text="Log" ObjectID = "tvLog" */
+"tvLog.text" = "Log";
+
+/* Class = "UILabel" text="Nav header Title" ObjectID = "RC-ID-1009" */
+"RC-ID-1009.text" = "Nav header Title";
+
+/* Class = "UIButton" normalTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.normalTitle" = "Header Button";
+
+/* Class = "UIButton" disabledTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.disabledTitle" = "Header Button";
+
+/* Class = "UIButton" selectedTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.selectedTitle" = "Header Button";
+
+/* Class = "UIButton" highlightedTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.highlightedTitle" = "Header Button";
+
+/* Class = "UIButton" normalTitle="Import" ObjectID = "nav-camera" */
+"nav-camera.normalTitle" = "Import";
+
+/* Class = "UIButton" disabledTitle="Import" ObjectID = "nav-camera" */
+"nav-camera.disabledTitle" = "Import";
+
+/* Class = "UIButton" selectedTitle="Import" ObjectID = "nav-camera" */
+"nav-camera.selectedTitle" = "Import";
+
+/* Class = "UIButton" highlightedTitle="Import" ObjectID = "nav-camera" */
+"nav-camera.highlightedTitle" = "Import";
+
+/* Class = "UIButton" normalTitle="Gallery" ObjectID = "nav-gallery" */
+"nav-gallery.normalTitle" = "Gallery";
+
+/* Class = "UIButton" disabledTitle="Gallery" ObjectID = "nav-gallery" */
+"nav-gallery.disabledTitle" = "Gallery";
+
+/* Class = "UIButton" selectedTitle="Gallery" ObjectID = "nav-gallery" */
+"nav-gallery.selectedTitle" = "Gallery";
+
+/* Class = "UIButton" highlightedTitle="Gallery" ObjectID = "nav-gallery" */
+"nav-gallery.highlightedTitle" = "Gallery";
+
+/* Class = "UIButton" normalTitle="Slide show" ObjectID = "nav-slideshow" */
+"nav-slideshow.normalTitle" = "Slide show";
+
+/* Class = "UIButton" disabledTitle="Slide show" ObjectID = "nav-slideshow" */
+"nav-slideshow.disabledTitle" = "Slide show";
+
+/* Class = "UIButton" selectedTitle="Slide show" ObjectID = "nav-slideshow" */
+"nav-slideshow.selectedTitle" = "Slide show";
+
+/* Class = "UIButton" highlightedTitle="Slide show" ObjectID = "nav-slideshow" */
+"nav-slideshow.highlightedTitle" = "Slide show";
+
+/* Class = "UIButton" normalTitle="Tools" ObjectID = "nav-manage" */
+"nav-manage.normalTitle" = "Tools";
+
+/* Class = "UIButton" disabledTitle="Tools" ObjectID = "nav-manage" */
+"nav-manage.disabledTitle" = "Tools";
+
+/* Class = "UIButton" selectedTitle="Tools" ObjectID = "nav-manage" */
+"nav-manage.selectedTitle" = "Tools";
+
+/* Class = "UIButton" highlightedTitle="Tools" ObjectID = "nav-manage" */
+"nav-manage.highlightedTitle" = "Tools";

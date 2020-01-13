@@ -1,0 +1,16 @@
+
+
+/* Class = "UILabel" text="Nav header Title" ObjectID = "RC-ID-1022" */
+"RC-ID-1022.text" = "Nav header Title";
+
+/* Class = "UIButton" normalTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.normalTitle" = "Header Button";
+
+/* Class = "UIButton" disabledTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.disabledTitle" = "Header Button";
+
+/* Class = "UIButton" selectedTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.selectedTitle" = "Header Button";
+
+/* Class = "UIButton" highlightedTitle="Header Button" ObjectID = "drawerBtn" */
+"drawerBtn.highlightedTitle" = "Header Button";

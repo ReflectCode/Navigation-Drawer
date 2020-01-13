@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DrawerDemo-NavControl">
+    <device id="retina5_5" orientation="portrait" appearance="light">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+       <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DrawerDemo-NavControl" sceneMemberID="viewController"> 
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" largeTitles="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/> 
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <color key="backgroundColor" red="0.2470588235" green="0.3176470588" blue="0.7098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DrawerDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="DrawerViewController" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+    <!--View Controller-->
+    <scene sceneID="DrawerViewController-Scene" >
+        <objects>
+            <viewController id="DrawerViewController" storyboardIdentifier="DrawerViewController" userLabel="DrawerViewController" customClass="DrawerViewController" customModule="DrawerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <barButtonItem key="backBarButtonItem" title="Back" id="Back-btn-ID"/>
+                <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="DrawerView" userLabel="DrawerView">
+                    <rect key="frame" x="0" y="0" width="414" height="736"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="DrawerView-safeArea"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES"  translatesAutoresizingMaskIntoConstraints="NO" id="drawer-layout-backView" userLabel="drawer-layout-backView">
+                            <rect key="frame" x="0" y="64" width="414" height="748"/>
+                            <color key="backgroundColor" red="1" green="0.7333333333" blue="0.2" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" clipsSubviews="YES" id="drawer-layout" userLabel="drawer-layout" translatesAutoresizingMaskIntoConstraints="NO" tag="1000" horizontalHuggingPriority="200" verticalHuggingPriority="200" opaque="NO" >
+                            <rect key="frame" x="0" y="64" width="414" height="748"/>
+                            <color key="backgroundColor" red="1" green="0.7333333333" blue="0.2" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES"  translatesAutoresizingMaskIntoConstraints="NO" id="content-frame-backView" userLabel="content-frame-backView">
+                                <rect key="frame" x="0" y="0" width="414" height="748"/>
+                                <color key="backgroundColor" red="1" green="0.6666666667" blue="0.6666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" clipsSubviews="YES" id="content-frame" userLabel="content-frame" translatesAutoresizingMaskIntoConstraints="NO" tag="1001" horizontalHuggingPriority="200" verticalHuggingPriority="200" opaque="NO" >
+                                <rect key="frame" x="0" y="0" width="414" height="748"/>
+                                <color key="backgroundColor" red="1" green="0.6666666667" blue="0.6666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <subviews>
+                                <label  textAlignment="center" lineBreakMode="middleTruncation" id="textView" userLabel="textView" tag="1003" contentMode="scaleToFill" clipsSubviews="YES" text="Drawer Demo" numberOfLines="999" customClass="RC_UILabel" customModuleProvider="target" userInteractionEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" verticalHuggingPriority="350" opaque="NO" >
+                                    <rect key="frame" x="0" y="56" width="414" height="41"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                    <color key="textColor" name="colorAccent"/> 
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="41" id="textView-Height-Eq-41"/>
+                                    </constraints>
+                                </label> 
+                                    <imageView contentVerticalAlignment="center" contentHorizontalAlignment="center" fixedFrame="YES" image="slideshow" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentMode="scaleAspectFit" clipsSubviews="YES" translatesAutoresizingMaskIntoConstraints="NO" tag="1004" id="RC-ID-1004" userLabel="RC-ID-1004" opaque="NO" >
+                                        <rect key="frame" x="157" y="97" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="RC-ID-1004-Height-Eq-100"/>
+                                            <constraint firstAttribute="width" constant="100" id="RC-ID-1004-Width-Eq-100"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" maxY="8" minY="3" minX="8" maxX="8" />
+                                        </imageView>
+                                <label  textAlignment="right" lineBreakMode="middleTruncation" id="tvEventLog" userLabel="tvEventLog" tag="1005" contentMode="scaleToFill" clipsSubviews="YES" text="Event Log" numberOfLines="999" customClass="RC_UILabel" customModuleProvider="target" userInteractionEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" verticalHuggingPriority="350" opaque="NO" >
+                                    <rect key="frame" x="264" y="197" width="150" height="28"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" red="0.3333333333" green="0.3333333333" blue="0.3333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset"> <real key="value" value="8"/> </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="tvEventLog-Height-Eq-28"/>
+                                        <constraint firstAttribute="width" constant="150" id="tvEventLog-Width-Eq-150"/>
+                                    </constraints>
+                                </label> 
+                                <label  textAlignment="right" lineBreakMode="middleTruncation" id="tvLog" userLabel="tvLog" tag="1006" contentMode="scaleToFill" clipsSubviews="YES" text="Log" numberOfLines="999" customClass="RC_UILabel" customModuleProvider="target" userInteractionEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" opaque="NO" >
+                                    <rect key="frame" x="264" y="225" width="150" height="150"/>
+                                    <color key="backgroundColor" name="colorWhite"/> 
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="0.3333333333" green="0.3333333333" blue="0.3333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset"> <real key="value" value="8"/> </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="tvLog-Height-Eq-150"/>
+                                        <constraint firstAttribute="width" constant="150" id="tvLog-Width-Eq-150"/>
+                                    </constraints>
+                                </label> 
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="textView" firstAttribute="leading" secondItem="content-frame" secondAttribute="leading" constant="0" userLabel="textView-matchLeading-content-frame" id="textView-matchLeading-content-frame"/>
+                                    <constraint firstItem="textView" firstAttribute="trailing" secondItem="content-frame" secondAttribute="trailing" constant="0" relation="" userLabel="textView-matchTrailing-content-frame" id="textView-matchTrailing-content-frame"/>
+                                    <constraint firstItem="textView" firstAttribute="centerX" secondItem="content-frame" secondAttribute="centerX" userLabel="textView-centerX-content-frame" id="textView-centerX-content-frame"/>
+                                    <constraint firstItem="textView" firstAttribute="top" secondItem="toolbar" secondAttribute="bottom" constant="0" userLabel="textView-below-toolbar" id="textView-below-toolbar"/>
+                                    <constraint firstItem="RC-ID-1004" firstAttribute="centerX" secondItem="content-frame" secondAttribute="centerX" userLabel="RC-ID-1004-centerX-content-frame" id="RC-ID-1004-centerX-content-frame"/>
+                                    <constraint firstItem="RC-ID-1004" firstAttribute="top" secondItem="textView" secondAttribute="bottom" constant="0" userLabel="RC-ID-1004-below-textView" id="RC-ID-1004-below-textView"/>
+                                    <constraint firstItem="tvEventLog" firstAttribute="trailing" secondItem="content-frame" secondAttribute="trailing" userLabel="tvEventLog-trailing-content-frame" id="tvEventLog-trailing-content-frame"/>
+                                    <constraint firstItem="tvEventLog" firstAttribute="top" secondItem="RC-ID-1004" secondAttribute="bottom" constant="0" userLabel="tvEventLog-below-RC-ID-1004" id="tvEventLog-below-RC-ID-1004"/>
+                                    <constraint firstItem="tvLog" firstAttribute="trailing" secondItem="content-frame" secondAttribute="trailing" userLabel="tvLog-trailing-content-frame" id="tvLog-trailing-content-frame"/>
+                                    <constraint firstItem="tvLog" firstAttribute="top" secondItem="tvEventLog" secondAttribute="bottom" constant="0" userLabel="tvLog-below-tvEventLog" id="tvLog-below-tvEventLog"/>
+                                </constraints>
+                                </view>
+                            <view contentMode="scaleToFill" clipsSubviews="NO" id="nav-view" userLabel="nav-view" translatesAutoresizingMaskIntoConstraints="NO" tag="1007" horizontalCompressionResistancePriority="1000" verticalHuggingPriority="200" opaque="NO" >
+                                <rect key="frame" x="0" y="0" width="300" height="748"/>
+                                <color key="backgroundColor" red="0.6" green="0.6" blue="0.6" alpha="1" colorSpace="calibratedRGB"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES"  translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1008-backView" userLabel="RC-ID-1008-backView">
+                                    <rect key="frame" x="0" y="0" width="300" height="192"/>
+                                    <color key="backgroundColor" name="colorGray"/> 
+                                </imageView>
+                                <view contentMode="scaleToFill" clipsSubviews="YES" id="RC-ID-1008" userLabel="RC-ID-1008" translatesAutoresizingMaskIntoConstraints="NO" tag="1008" horizontalHuggingPriority="200" opaque="NO" >
+                                    <rect key="frame" x="0" y="0" width="300" height="192"/>
+                                    <color key="backgroundColor" name="colorGray"/> 
+                                <subviews>
+                                <label  textAlignment="left" lineBreakMode="middleTruncation" id="RC-ID-1009" userLabel="RC-ID-1009" tag="1009" contentMode="scaleToFill" clipsSubviews="YES" text="Nav header Title" numberOfLines="999" customClass="RC_UILabel" customModuleProvider="target" userInteractionEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" verticalHuggingPriority="350" opaque="NO" >
+                                    <rect key="frame" x="16" y="16" width="268" height="25"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="RC-ID-1009-Height-Eq-25"/>
+                                    </constraints>
+                                </label> 
+                                        <imageView contentVerticalAlignment="center" contentHorizontalAlignment="center" fixedFrame="YES" image="rc_logo_round" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentMode="scaleAspectFit" clipsSubviews="YES" translatesAutoresizingMaskIntoConstraints="NO" tag="1010" id="drawerImage" userLabel="drawerImage" opaque="NO" >
+                                            <rect key="frame" x="16" y="41" width="100" height="100"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="drawerImage-Height-Eq-100"/>
+                                                <constraint firstAttribute="width" constant="100" id="drawerImage-Width-Eq-100"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" maxY="8" minY="3" minX="8" maxX="8" />
+                                            </imageView>
+                                        <button contentVerticalAlignment="center" contentHorizontalAlignment="center" lineBreakMode="middleTruncation" id="drawerBtn" userLabel="drawerBtn" tag="1011" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" showsTouchWhenHighlighted="YES" opaque="NO" >
+                                            <rect key="frame" x="16" y="141" width="136" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="drawerBtn-Height-Eq-35"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="drawerBtn-Width-Eq-136"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" maxY="13" minY="13" minX="13" maxX="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal"  title="Header Button" backgroundImage="RC_btn_default_normal">
+                                                <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                             </state>
+                                            <state key="disabled"  title="Header Button" backgroundImage="RC_btn_default_normal_disable">
+                                                <color key="titleColor" red="0" green="0" blue="0" alpha="0.5333333333" colorSpace="calibratedRGB"/>
+                                             </state>
+                                            <state key="selected"  title="Header Button" backgroundImage="RC_btn_default_selected">
+                                                <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                             </state>
+                                            <state key="highlighted"  title="Header Button" backgroundImage="RC_btn_default_selected">
+                                                <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                             </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="equal" constant="192" id="RC-ID-1008-Height-Eq-192"/>
+                                        <constraint firstItem="RC-ID-1009" firstAttribute="trailing" secondItem="RC-ID-1008" secondAttribute="trailing" constant="-16" relation="" userLabel="RC-ID-1009-matchTrailing-RC-ID-1008" id="RC-ID-1009-matchTrailing-RC-ID-1008"/>
+                                        <constraint firstItem="RC-ID-1009" firstAttribute="leading" secondItem="RC-ID-1008" secondAttribute="leading" constant="16" userLabel="RC-ID-1009-leading-RC-ID-1008" id="RC-ID-1009-leading-RC-ID-1008"/>
+                                        <constraint firstItem="RC-ID-1009" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="top" constant="16" userLabel="RC-ID-1009-alignTop-withContainer" id="RC-ID-1009-alignTop-withContainer"/>
+                                        <constraint firstItem="drawerImage" firstAttribute="leading" secondItem="RC-ID-1008" secondAttribute="leading" constant="16" userLabel="drawerImage-leading-RC-ID-1008" id="drawerImage-leading-RC-ID-1008"/>
+                                        <constraint firstItem="drawerImage" firstAttribute="top" secondItem="RC-ID-1009" secondAttribute="bottom" constant="0" userLabel="drawerImage-below-RC-ID-1009" id="drawerImage-below-RC-ID-1009"/>
+                                        <constraint firstItem="drawerBtn" firstAttribute="trailing" secondItem="RC-ID-1008" secondAttribute="trailing" relation="lessThanOrEqual" constant="-148" userLabel="drawerBtn-matchTrailing-RC-ID-1008" id="drawerBtn-matchTrailing-RC-ID-1008"/>
+                                        <constraint firstItem="drawerBtn" firstAttribute="leading" secondItem="RC-ID-1008" secondAttribute="leading" constant="16" userLabel="drawerBtn-leading-RC-ID-1008" id="drawerBtn-leading-RC-ID-1008"/>
+                                        <constraint firstItem="drawerBtn" firstAttribute="top" secondItem="drawerImage" secondAttribute="bottom" constant="0" userLabel="drawerBtn-below-drawerImage" id="drawerBtn-below-drawerImage"/>
+                                    </constraints>
+                                    </view>
+                                <scrollView contentMode="scaleToFill" clipsSubviews="YES" id="RC-ID-1012" userLabel="RC-ID-1012" translatesAutoresizingMaskIntoConstraints="NO" tag="1012" horizontalHuggingPriority="200" verticalHuggingPriority="200" multipleTouchEnabled="YES" directionalLockEnabled="YES" minimumZoomScale="0" maximumZoomScale="1" keyboardDismissMode="onDrag" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="NO" >
+                                    <rect key="frame" x="0" y="192" width="300" height="556"/>
+                                    <color key="backgroundColor" red="0.9960784314" green="0.9960784314" blue="0.9960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES"  translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1013-backView" userLabel="RC-ID-1013-backView">
+                                        <rect key="frame" x="0" y="0" width="300" height="192"/>
+                                        <color key="backgroundColor" red="0.9960784314" green="0.9960784314" blue="0.9960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" clipsSubviews="YES" id="RC-ID-1013" userLabel="RC-ID-1013" translatesAutoresizingMaskIntoConstraints="NO" tag="1013" horizontalHuggingPriority="200" >
+                                        <rect key="frame" x="0" y="0" width="300" height="192"/>
+                                        <color key="backgroundColor" red="0.9960784314" green="0.9960784314" blue="0.9960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES"  translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1014-backView" userLabel="RC-ID-1014-backView">
+                                            <rect key="frame" x="0" y="0" width="300" height="192"/>
+                                            <color key="backgroundColor" red="0.9960784314" green="0.9960784314" blue="0.9960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" clipsSubviews="YES" id="RC-ID-1014" userLabel="RC-ID-1014" translatesAutoresizingMaskIntoConstraints="NO" tag="1014" horizontalHuggingPriority="200" >
+                                            <rect key="frame" x="0" y="0" width="300" height="192"/>
+                                            <color key="backgroundColor" red="0.9960784314" green="0.9960784314" blue="0.9960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <subviews>
+                                                <button contentVerticalAlignment="center" contentHorizontalAlignment="left" lineBreakMode="middleTruncation" id="nav-camera" userLabel="nav-camera" tag="1015" contentMode="scaleToFill" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" showsTouchWhenHighlighted="YES" >
+                                                    <rect key="frame" x="0" y="0" width="300" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="nav-camera-Height-Eq-48"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" maxY="13" minY="13" minX="13" maxX="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="titleEdgeInsets" minX="8.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal"  title="Import" image="camera" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="disabled"  title="Import" image="camera" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="0.5333333333" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="selected"  title="Import" image="camera" backgroundImage="RC_btn_default_selected">
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="highlighted"  title="Import" image="camera" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <connections>
+                                                        <action selector="onNavigationItemSelected:" destination="DrawerViewController" eventType="touchUpInside" id="nav-camera-onNavigationItemSelected"/>
+                                                    </connections>
+                                                </button>
+                                                <button contentVerticalAlignment="center" contentHorizontalAlignment="left" lineBreakMode="middleTruncation" id="nav-gallery" userLabel="nav-gallery" tag="1016" contentMode="scaleToFill" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" showsTouchWhenHighlighted="YES" >
+                                                    <rect key="frame" x="0" y="48" width="300" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="nav-gallery-Height-Eq-48"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" maxY="13" minY="13" minX="13" maxX="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="titleEdgeInsets" minX="8.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal"  title="Gallery" image="gallery" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="disabled"  title="Gallery" image="gallery" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="0.5333333333" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="selected"  title="Gallery" image="gallery" backgroundImage="RC_btn_default_selected">
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="highlighted"  title="Gallery" image="gallery" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <connections>
+                                                        <action selector="onNavigationItemSelected:" destination="DrawerViewController" eventType="touchUpInside" id="nav-gallery-onNavigationItemSelected"/>
+                                                    </connections>
+                                                </button>
+                                                <button contentVerticalAlignment="center" contentHorizontalAlignment="left" lineBreakMode="middleTruncation" id="nav-slideshow" userLabel="nav-slideshow" tag="1017" contentMode="scaleToFill" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" showsTouchWhenHighlighted="YES" >
+                                                    <rect key="frame" x="0" y="96" width="300" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="nav-slideshow-Height-Eq-48"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" maxY="13" minY="13" minX="13" maxX="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="titleEdgeInsets" minX="8.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal"  title="Slide show" image="slideshow" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="disabled"  title="Slide show" image="slideshow" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="0.5333333333" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="selected"  title="Slide show" image="slideshow" backgroundImage="RC_btn_default_selected">
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="highlighted"  title="Slide show" image="slideshow" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <connections>
+                                                        <action selector="onNavigationItemSelected:" destination="DrawerViewController" eventType="touchUpInside" id="nav-slideshow-onNavigationItemSelected"/>
+                                                    </connections>
+                                                </button>
+                                                <button contentVerticalAlignment="center" contentHorizontalAlignment="left" lineBreakMode="middleTruncation" id="nav-manage" userLabel="nav-manage" tag="1018" contentMode="scaleToFill" verticalHuggingPriority="350" translatesAutoresizingMaskIntoConstraints="NO" showsTouchWhenHighlighted="YES" >
+                                                    <rect key="frame" x="0" y="144" width="300" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="nav-manage-Height-Eq-48"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" maxY="13" minY="13" minX="13" maxX="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="titleEdgeInsets" minX="8.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal"  title="Tools" image="manage" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="disabled"  title="Tools" image="manage" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="0.5333333333" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="selected"  title="Tools" image="manage" backgroundImage="RC_btn_default_selected">
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <state key="highlighted"  title="Tools" image="manage" >
+                                                        <color key="titleColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
+                                                     </state>
+                                                    <connections>
+                                                        <action selector="onNavigationItemSelected:" destination="DrawerViewController" eventType="touchUpInside" id="nav-manage-onNavigationItemSelected"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="200" constant="192" id="RC-ID-1014-Height-placeHolder" />
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="192" id="RC-ID-1014-Height-Eq-192"/>
+                                                <constraint firstItem="nav-camera" firstAttribute="leading" secondItem="RC-ID-1014" secondAttribute="leading" constant="0" userLabel="nav-camera-matchLeading-RC-ID-1014" id="nav-camera-matchLeading-RC-ID-1014"/>
+                                                <constraint firstItem="nav-camera" firstAttribute="top" secondItem="RC-ID-1014" secondAttribute="top" userLabel="nav-camera-top-RC-ID-1014" id="nav-camera-top-RC-ID-1014"/>
+                                                <constraint firstItem="nav-camera" firstAttribute="trailing" secondItem="RC-ID-1014" secondAttribute="trailing" userLabel="nav-camera-alignTrailing-withContainer" id="nav-camera-alignTrailing-withContainer"/>
+                                                <constraint firstItem="nav-gallery" firstAttribute="leading" secondItem="RC-ID-1014" secondAttribute="leading" constant="0" userLabel="nav-gallery-matchLeading-RC-ID-1014" id="nav-gallery-matchLeading-RC-ID-1014"/>
+                                                <constraint firstItem="nav-gallery" firstAttribute="top" secondItem="nav-camera" secondAttribute="bottom" constant="0" userLabel="nav-gallery-below-nav-camera" id="nav-gallery-below-nav-camera"/>
+                                                <constraint firstItem="nav-gallery" firstAttribute="trailing" secondItem="RC-ID-1014" secondAttribute="trailing" userLabel="nav-gallery-alignTrailing-withContainer" id="nav-gallery-alignTrailing-withContainer"/>
+                                                <constraint firstItem="nav-slideshow" firstAttribute="leading" secondItem="RC-ID-1014" secondAttribute="leading" constant="0" userLabel="nav-slideshow-matchLeading-RC-ID-1014" id="nav-slideshow-matchLeading-RC-ID-1014"/>
+                                                <constraint firstItem="nav-slideshow" firstAttribute="top" secondItem="nav-gallery" secondAttribute="bottom" constant="0" userLabel="nav-slideshow-below-nav-gallery" id="nav-slideshow-below-nav-gallery"/>
+                                                <constraint firstItem="nav-slideshow" firstAttribute="trailing" secondItem="RC-ID-1014" secondAttribute="trailing" userLabel="nav-slideshow-alignTrailing-withContainer" id="nav-slideshow-alignTrailing-withContainer"/>
+                                                <constraint firstItem="nav-manage" firstAttribute="leading" secondItem="RC-ID-1014" secondAttribute="leading" constant="0" userLabel="nav-manage-matchLeading-RC-ID-1014" id="nav-manage-matchLeading-RC-ID-1014"/>
+                                                <constraint firstItem="nav-manage" firstAttribute="top" secondItem="nav-slideshow" secondAttribute="bottom" constant="0" userLabel="nav-manage-below-nav-slideshow" id="nav-manage-below-nav-slideshow"/>
+                                                <constraint firstItem="nav-manage" firstAttribute="trailing" secondItem="RC-ID-1014" secondAttribute="trailing" relation="equal" userLabel="nav-manage-alignTrailing-withContainer" id="nav-manage-alignTrailing-withContainer"/>
+                                            </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="200" constant="192" id="RC-ID-1013-Height-placeHolder" />
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="192" id="RC-ID-1013-Height-Eq-192"/>
+                                            <constraint firstItem="RC-ID-1014-backView" firstAttribute="top"    secondItem="RC-ID-1014" secondAttribute="top"    id="RC-ID-1014-backView-matchTop-RC-ID-1014"/>
+                                            <constraint firstItem="RC-ID-1014-backView" firstAttribute="leading"  secondItem="RC-ID-1014" secondAttribute="leading"  id="RC-ID-1014-backView-matchLeading-RC-ID-1014"/>
+                                            <constraint firstItem="RC-ID-1014-backView" firstAttribute="height" secondItem="RC-ID-1014" secondAttribute="height" id="RC-ID-1014-backView-matchHeight-RC-ID-1014"/>
+                                            <constraint firstItem="RC-ID-1014-backView" firstAttribute="width"  secondItem="RC-ID-1014" secondAttribute="width"  id="RC-ID-1014-backView-matchWidth-RC-ID-1014"/>
+                                            <constraint firstItem="RC-ID-1014" firstAttribute="top" secondItem="RC-ID-1013" secondAttribute="top" relation="equal" constant="0" userLabel="RC-ID-1014-matchTop-RC-ID-1013" id="RC-ID-1014-matchTop-RC-ID-1013" />
+                                            <constraint firstItem="RC-ID-1014" firstAttribute="bottom" secondItem="RC-ID-1013" secondAttribute="bottom" relation="equal" constant="-0" priority="100" userLabel="RC-ID-1014-bottom-max" id="RC-ID-1014-bottom-max" />
+                                            <constraint firstItem="RC-ID-1014" firstAttribute="leading" secondItem="RC-ID-1013" secondAttribute="leading" relation="equal" constant="0" userLabel="RC-ID-1014-matchLeading-RC-ID-1013" id="RC-ID-1014-matchLeading-RC-ID-1013"/>
+                                            <constraint firstItem="RC-ID-1014" firstAttribute="trailing" secondItem="RC-ID-1013" secondAttribute="trailing" relation="equal" constant="0" userLabel="RC-ID-1014-matchTrailing-RC-ID-1013" id="RC-ID-1014-matchTrailing-RC-ID-1013"/>
+                                            <constraint firstItem="RC-ID-1014" firstAttribute="bottom" secondItem="RC-ID-1013" secondAttribute="bottom" relation="lessThanOrEqual" constant="0" userLabel="RC-ID-1014-Bottom-LessThan-RC-ID-1013-Bottom" id="RC-ID-1014-Bottom-LessThan-RC-ID-1013-Bottom" />
+                                        </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RC-ID-1013-backView" firstAttribute="top"    secondItem="RC-ID-1013" secondAttribute="top"    id="RC-ID-1013-backView-matchTop-RC-ID-1013"/>
+                                        <constraint firstItem="RC-ID-1013-backView" firstAttribute="leading"  secondItem="RC-ID-1013" secondAttribute="leading"  id="RC-ID-1013-backView-matchLeading-RC-ID-1013"/>
+                                        <constraint firstItem="RC-ID-1013-backView" firstAttribute="height" secondItem="RC-ID-1013" secondAttribute="height" id="RC-ID-1013-backView-matchHeight-RC-ID-1013"/>
+                                        <constraint firstItem="RC-ID-1013-backView" firstAttribute="width"  secondItem="RC-ID-1013" secondAttribute="width"  id="RC-ID-1013-backView-matchWidth-RC-ID-1013"/>
+                                        <constraint firstItem="RC-ID-1013" firstAttribute="width" secondItem="RC-ID-1012" secondAttribute="width" constant="0" id="RC-ID-1013-Width-Eq-ScrollView-RC-ID-1012"/>
+                                        <constraint firstItem="RC-ID-1013" firstAttribute="top" secondItem="RC-ID-1012" secondAttribute="top" relation="equal" constant="0" userLabel="RC-ID-1013-matchTop-RC-ID-1012" id="RC-ID-1013-matchTop-RC-ID-1012" />
+                                        <constraint firstItem="RC-ID-1013" firstAttribute="bottom" secondItem="RC-ID-1012" secondAttribute="bottom" relation="equal" constant="0" priority="100" userLabel="RC-ID-1013-ScrollView-bottom" id="RC-ID-1013-ScrollView-Bottom" />
+                                        <constraint firstItem="RC-ID-1013" firstAttribute="leading" secondItem="RC-ID-1012" secondAttribute="leading" relation="equal" constant="0" userLabel="RC-ID-1013-matchLeading-RC-ID-1012" id="RC-ID-1013-matchLeading-RC-ID-1012"/>
+                                        <constraint firstItem="RC-ID-1013" firstAttribute="trailing" secondItem="RC-ID-1012" secondAttribute="trailing" relation="equal" constant="0" userLabel="RC-ID-1013-matchTrailing-RC-ID-1012" id="RC-ID-1013-matchTrailing-RC-ID-1012"/>
+                                        <constraint firstItem="RC-ID-1013" firstAttribute="bottom" secondItem="RC-ID-1012" secondAttribute="bottom" relation="equal" constant="0" userLabel="RC-ID-1013-matchBottom-ScrollView" id="RC-ID-1013-matchBottom-ScrollView" />
+                                    </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="equal" constant="300" id="nav-view-Width-Eq-300"/>
+                                    <constraint firstItem="RC-ID-1008-backView" firstAttribute="top"    secondItem="RC-ID-1008" secondAttribute="top"    id="RC-ID-1008-backView-matchTop-RC-ID-1008"/>
+                                    <constraint firstItem="RC-ID-1008-backView" firstAttribute="leading"  secondItem="RC-ID-1008" secondAttribute="leading"  id="RC-ID-1008-backView-matchLeading-RC-ID-1008"/>
+                                    <constraint firstItem="RC-ID-1008-backView" firstAttribute="height" secondItem="RC-ID-1008" secondAttribute="height" id="RC-ID-1008-backView-matchHeight-RC-ID-1008"/>
+                                    <constraint firstItem="RC-ID-1008-backView" firstAttribute="width"  secondItem="RC-ID-1008" secondAttribute="width"  id="RC-ID-1008-backView-matchWidth-RC-ID-1008"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="top" secondItem="nav-view" secondAttribute="top" relation="equal" constant="0" userLabel="RC-ID-1008-matchTop-nav-view" id="RC-ID-1008-matchTop-nav-view" />
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="leading" secondItem="nav-view" secondAttribute="leading" relation="equal" constant="0" userLabel="RC-ID-1008-matchLeading-nav-view" id="RC-ID-1008-matchLeading-nav-view"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="trailing" secondItem="nav-view" secondAttribute="trailing" relation="equal" constant="0" userLabel="RC-ID-1008-matchTrailing-nav-view" id="RC-ID-1008-matchTrailing-nav-view"/>
+                                    <constraint firstItem="RC-ID-1012" firstAttribute="leading" secondItem="nav-view" secondAttribute="leading" relation="equal" constant="0" userLabel="RC-ID-1012-matchLeading-nav-view" id="RC-ID-1012-matchLeading-nav-view"/>
+                                    <constraint firstItem="RC-ID-1012" firstAttribute="trailing" secondItem="nav-view" secondAttribute="trailing" relation="equal" constant="0" userLabel="RC-ID-1012-matchTrailing-nav-view" id="RC-ID-1012-matchTrailing-nav-view"/>
+                                    <constraint firstItem="RC-ID-1012" firstAttribute="bottom" secondItem="nav-view" secondAttribute="bottom" relation="equal" constant="0" userLabel="RC-ID-1012-matchBottom-nav-view" id="RC-ID-1012-matchBottom-nav-view" />
+                                    <constraint firstItem="RC-ID-1012" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="bottom" constant="0" userLabel="RC-ID-1012-below-RC-ID-1008" id="RC-ID-1012-below-RC-ID-1008"/>
+                                </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="content-frame-backView" firstAttribute="top"    secondItem="content-frame" secondAttribute="top"    id="content-frame-backView-matchTop-content-frame"/>
+                                <constraint firstItem="content-frame-backView" firstAttribute="leading"  secondItem="content-frame" secondAttribute="leading"  id="content-frame-backView-matchLeading-content-frame"/>
+                                <constraint firstItem="content-frame-backView" firstAttribute="height" secondItem="content-frame" secondAttribute="height" id="content-frame-backView-matchHeight-content-frame"/>
+                                <constraint firstItem="content-frame-backView" firstAttribute="width"  secondItem="content-frame" secondAttribute="width"  id="content-frame-backView-matchWidth-content-frame"/>
+                                <constraint firstItem="content-frame" firstAttribute="top" secondItem="drawer-layout" secondAttribute="top" relation="equal" constant="0" userLabel="content-frame-matchTop-drawer-layout" id="content-frame-matchTop-drawer-layout" />
+                                <constraint firstItem="content-frame" firstAttribute="leading" secondItem="drawer-layout" secondAttribute="leading" relation="equal" constant="0" userLabel="content-frame-matchLeading-drawer-layout" id="content-frame-matchLeading-drawer-layout"/>
+                                <constraint firstItem="content-frame" firstAttribute="trailing" secondItem="drawer-layout" secondAttribute="trailing" relation="equal" constant="0" userLabel="content-frame-matchTrailing-drawer-layout" id="content-frame-matchTrailing-drawer-layout"/>
+                                <constraint firstItem="content-frame" firstAttribute="bottom" secondItem="drawer-layout" secondAttribute="bottom" relation="equal" constant="0" userLabel="content-frame-matchBottom-drawer-layout" id="content-frame-matchBottom-drawer-layout" />
+                                <constraint firstItem="nav-view" firstAttribute="top" secondItem="drawer-layout" secondAttribute="top" relation="equal" constant="0" userLabel="nav-view-matchTop-drawer-layout" id="nav-view-matchTop-drawer-layout" />
+                                <constraint firstItem="nav-view" firstAttribute="bottom" secondItem="drawer-layout" secondAttribute="bottom" relation="equal" constant="0" userLabel="nav-view-matchBottom-drawer-layout" id="nav-view-matchBottom-drawer-layout" />
+                                <constraint firstItem="nav-view" firstAttribute="leading" secondItem="drawer-layout" secondAttribute="leading" constant="-320" userLabel="nav-view-toStartOf-drawer-layout" id="nav-view-toStartOf-drawer-layout"/>
+                            </constraints>
+                            </view>
+                        <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View" >
+                        <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                        <constraint firstAttribute="height" constant="0" id="Footer-View-Height"/>
+                        </constraints>
+                        </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="drawer-layout-backView" firstAttribute="top"    secondItem="drawer-layout" secondAttribute="top"    id="drawer-layout-backView-matchTop-drawer-layout"/>
+                            <constraint firstItem="drawer-layout-backView" firstAttribute="leading"  secondItem="drawer-layout" secondAttribute="leading"  id="drawer-layout-backView-matchLeading-drawer-layout"/>
+                            <constraint firstItem="drawer-layout-backView" firstAttribute="height" secondItem="drawer-layout" secondAttribute="height" id="drawer-layout-backView-matchHeight-drawer-layout"/>
+                            <constraint firstItem="drawer-layout-backView" firstAttribute="width"  secondItem="drawer-layout" secondAttribute="width"  id="drawer-layout-backView-matchWidth-drawer-layout"/>
+                            <constraint firstItem="drawer-layout" firstAttribute="top" secondItem="DrawerView-safeArea" secondAttribute="top" relation="equal" constant="0" userLabel="drawer-layout-matchTop-DrawerView-safeArea" id="drawer-layout-matchTop-DrawerView-safeArea" />
+                            <constraint firstItem="drawer-layout" firstAttribute="leading" secondItem="DrawerView-safeArea" secondAttribute="leading" relation="equal" constant="0" userLabel="drawer-layout-matchLeading-DrawerView-safeArea" id="drawer-layout-matchLeading-DrawerView-safeArea"/>
+                            <constraint firstItem="drawer-layout" firstAttribute="trailing" secondItem="DrawerView-safeArea" secondAttribute="trailing" relation="equal" constant="0" userLabel="drawer-layout-matchTrailing-DrawerView-safeArea" id="drawer-layout-matchTrailing-DrawerView-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="drawer-layout" secondAttribute="bottom" id="footer-match-top-drawer-layout"  priority="750" relation="equal" constant="-56" userLabel="footer-match-top-drawer-layout"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="DrawerView-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="DrawerView-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="DrawerView-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                        </constraints>
+                        </view>
+                    <connections>
+                        <outlet property="drawer_layoutOutlet" destination="drawer-layout" id="drawer-layout-Outlet1"/>
+                        <outlet property="content_frameOutlet" destination="content-frame" id="content-frame-Outlet1"/>
+                        <outlet property="textViewOutlet" destination="textView" id="textView-Outlet1"/>
+                        <outlet property="tvEventLogOutlet" destination="tvEventLog" id="tvEventLog-Outlet1"/>
+                        <outlet property="tvLogOutlet" destination="tvLog" id="tvLog-Outlet1"/>
+                        <outlet property="nav_viewOutlet" destination="nav-view" id="nav-view-Outlet1"/> <outlet property="nav_view_LeadingConstraint" destination="nav-view-toStartOf-drawer-layout" id="activity-drawer-LeadingConstraint-Outlet"/>
+                        <outlet property="drawerImageOutlet" destination="drawerImage" id="drawerImage-Outlet1"/>
+                        <outlet property="drawerBtnOutlet" destination="drawerBtn" id="drawerBtn-Outlet1"/>
+                        <outlet property="nav_cameraOutlet" destination="nav-camera" id="nav-camera-Outlet1"/>
+                        <outlet property="nav_galleryOutlet" destination="nav-gallery" id="nav-gallery-Outlet1"/>
+                        <outlet property="nav_slideshowOutlet" destination="nav-slideshow" id="nav-slideshow-Outlet1"/>
+                        <outlet property="nav_manageOutlet" destination="nav-manage" id="nav-manage-Outlet1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="colorPrimary"> </namedColor> 
+        <namedColor name="colorAccent"> </namedColor> 
+        <namedColor name="colorWhite"> </namedColor> 
+        <namedColor name="colorGray"> </namedColor> 
+        
+    </resources>
+</document>

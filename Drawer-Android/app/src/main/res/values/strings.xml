@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DrawerDemo</string>
+    <string name="importPic">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slide show</string>
+    <string name="tools">Tools</string>
+
+</resources>

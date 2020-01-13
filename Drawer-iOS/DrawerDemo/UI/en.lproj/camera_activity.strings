@@ -1,0 +1,7 @@
+
+
+/* Class = "UINavigationItem" title="DrawerDemo" ObjectID = "CameraViewController-Nav-ID" */
+"CameraViewController-Nav-ID.title"  = "DrawerDemo";
+
+/* Class = "UILabel" text="Camera Activity" ObjectID = "textView2" */
+"textView2.text" = "Camera Activity";
