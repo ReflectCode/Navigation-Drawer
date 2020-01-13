@@ -32,7 +32,7 @@ This repository contains the Android source code which was used as input and gen
 
 
 ## Statement Estimation
-Check out project report - DrawerDemo_RC-Report.pdf
+Check out project report - https://github.com/ReflectCode/Navigation-Drawer/blob/master/DrawerDemo_RC-Report.pdf
 
 
 ## Dev Notes
